@@ -5,6 +5,31 @@
 /* Body */
 
 body {
-	font-family: 'Ubuntu Mono', monospace;
-	background-color: #e7e7e7;
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #e7e7e7;
+}
+
+/* Continer */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+pre {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 15px;
+    border-radius: 8px;
+    overflow: auto;
+    white-space: pre-wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    direction: ltr;
+}
+
+code {
+    color: #f8f8f2;
 }

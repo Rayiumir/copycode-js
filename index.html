@@ -11,32 +11,29 @@
 </head>
 <body>
     <div class="container">
+        <div style="text-align: center;">
+            <h3 style="font-weight: bolder; font-size: 25px;">CopyCode JS</h3>
+        </div>
         <pre>
             <code>
-                use Illuminate\Database\Migrations\Migration;
-                use Illuminate\Database\Schema\Blueprint;
-                use Illuminate\Support\Facades\Schema;
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-                return new class extends Migration
-                {
-                    public function up()
-                    {
-                        Schema::table('user', function (Blueprint $table) {
-                            $table->string('role')->nullable();
-                        });
-                    }
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
 
-                    public function down()
-                    {
-                        Schema::table('user', function (Blueprint $table) {
-                            $table->dropColumn('role');
-                        });
-                    }
-                }
+const unfold = (f, seed) => {
+const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+}
             </code>
         </pre>
+
+        <div style="text-align: center;">
+            <a href="https://github.com/Rayiumir/copycode-js"><button class="github"><i class="fa-brands fa-github fa-3x"></i> <span>Download</span> </button></a>
+        </div>
     </div>
     <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/copycode.js"></script>
 </body>
 </html>

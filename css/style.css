@@ -1,0 +1,10 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+/* Body */
+
+body {
+	font-family: 'Ubuntu Mono', monospace;
+	background-color: #e7e7e7;
+}

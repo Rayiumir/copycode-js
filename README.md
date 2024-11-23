@@ -1,3 +1,12 @@
+<div align="center">
+    <a href="https://github.com/Rayiumir/copycode-js" target="_blank">
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="./art/CopycodeLogoDark.png">
+            <source media="(prefers-color-scheme: light)" srcset="./art/CopycodeLogoLight.png">
+            <img alt="CopyCode JS" src="./art/CopycodeLogoLight.png">
+        </picture>
+    </a>
+</div>
 
 # CopyCode JS
 
